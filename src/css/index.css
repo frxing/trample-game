@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-overflow-scrolling: touch
 }
 body {
     margin:0; 
@@ -36,4 +37,20 @@ body {
     box-shadow: 0 0 5px rgb(159, 224, 168);
     margin: 0 auto;
     text-decoration: none;
+    transform: scale(1.5);
+    animation: toBtn 2s infinite;
+}
+@keyframes toBtn
+{
+0% {transform: scale(1);}
+50% {transform: scale(1.2);}
+100% {transform: scale(1);}
+}
+.layer p {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color: #eee;
+    position: absolute;
+    bottom: 20px;
 }
