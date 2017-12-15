@@ -132,7 +132,7 @@ class blockGame {
                 _this.over();
             } else {
                 _this.data[tr][tc] = 0;
-                _this.speed += 0.2;
+                _this.speed += 0.4;
             }
             _this.draw();
             ev.preventDefault();
